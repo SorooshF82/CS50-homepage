@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles-hobbys.css">
+    <title>hobbys</title>
+</head>
+<body background="./images/Marvel's Spider-Man_20210920204318.jpg">
+    <h2>Now, here I will talk about my hobbys or other recreational activties that I have.</h2>
+    <div id="games">
+        <h4>My favorite hobby is playing video games</h4>
+        <p>I have played games since I was three years old.</p>
+        <p>I have played in various consoles and on pc.</p>
+    </div>
+
+    <div class="pics">
+        <h4>Here you can view some of the screenshots I have saved from playing games on PS4</h4>
+        <div id="cont">
+            <img  id="imgs" src="./images/God of War Ragnarök_20221204205321.jpg" alt="pics" height="375" width="632">
+            <button id="next" onclick="next()">Next</button>
+            <button id="prev" onclick="prev()">previous</button>
+        </div>
+    </div>
+    <a href="./index.html">HOME</a>
+</body>
+<script>
+    let i = 0;
+    let n = document.querySelector('#imgs');
+
+    let rr = ['./images/Ghost of Tsushima_20230225223651.jpg', "./images/Assassin's Creed® Syndicate_20220923201341.jpg", "./images/Assassin's Creed® Valhalla_20210323153702.jpg", "./images/BATMAN™_ ARKHAM KNIGHT_20221223211136.jpg", "./images/DAYS GONE_20210418161013.jpg", "./images/Dying Light_ The Following – Enhanced Edition_20220224185702.jpg", "./images/Far Cry® 6_20220404193304.jpg"]
+    function next() {
+            n.src = rr[i];
+            i++;
+            if (i== rr.length) {
+                i = 0;
+            }
+        }
+</script>
+</html>

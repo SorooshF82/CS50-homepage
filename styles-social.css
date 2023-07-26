@@ -1,0 +1,22 @@
+body {
+    background-color:teal;
+    text-align: center;
+}
+
+table {
+    right: 450px;
+    bottom: 300px;
+    position: absolute;
+    border: 3px ridge honeydew;
+}
+
+th {
+    padding: 20px;
+    border: 3px dotted honeydew;
+}
+
+td {
+    color: blue;
+    padding: 10px;
+    border: 3px dotted azure;
+}
